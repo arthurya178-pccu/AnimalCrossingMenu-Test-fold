@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MyMenu/> <!--呼叫MyMenu 樣板-->
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyMenu from './components/menu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyMenu //使用下層MyMenu
   }
 }
 </script>
@@ -24,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body
+{
+  background: #caffeb;
 }
 </style>
